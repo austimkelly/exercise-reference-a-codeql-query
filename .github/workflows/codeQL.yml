@@ -26,7 +26,7 @@ jobs:
         uses: github/codeql-action/init@v1
         with:
           languages: ${{ matrix.language }}
-          config-file: .github/codeql/codeql-config.yml  # Specify the path to your codeql-config.yml file
+          config-file: ./.github/codeql/codeql-config.yml  # Specify the path to your codeql-config.yml file
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
